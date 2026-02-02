@@ -8,6 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "jszip": "^3.10.1",
     "mirotone": "5"
   },
   "devDependencies": {

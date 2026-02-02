@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+    <title>Export images</title>
+  </head>
+  <body>
+    <div class="export-modal-content">
+      <h2>Export images</h2>
+      <div id="options-container" class="options-container">
+        <label class="toggle-label">
+          <input type="checkbox" id="use-names-toggle" checked />
+          <span>Use image names for filenames</span>
+        </label>
+        <p class="help-text">When unchecked, files are named image-001, image-002, …</p>
+        <button type="button" id="start-export-btn" class="button button-primary">Export</button>
+      </div>
+      <div id="progress-container" class="progress-container" hidden>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="progress-status" class="progress-status">Preparing…</p>
+      </div>
+      <div id="done-container" class="done-container" hidden>
+        <p id="done-message" class="progress-status"></p>
+        <button type="button" id="download-btn" class="button button-primary" disabled>Download ZIP</button>
+        <button type="button" id="close-btn" class="button button-secondary">Close</button>
+      </div>
+      <p id="error-message" class="error-message" hidden></p>
+    </div>
+    <script type="module" src="/src/export-modal.js"></script>
+  </body>
+</html>

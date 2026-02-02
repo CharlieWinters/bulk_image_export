@@ -7,32 +7,19 @@
     <title>Bulk Export Images</title>
   </head>
   <body>
-    
     <div id="root">
-      <div class="grid wrapper">
-        <div class="cs1 ce12">
-          <img src="/src/assets/congratulations.png" alt="" />
-        </div>
-        <div class="cs1 ce12">
-          <h1>Congratulations!</h1>
-          <p>You've just created your first Miro app!</p>
-          <p>
-            To explore more and build your own app, see the Miro Developer
-            Platform documentation.
-          </p>
-        </div>
-        <div class="cs1 ce12">
-          <a
-            class="button button-primary"
-            target="_blank"
-            href="https://developers.miro.com"
-          >
-            Read the documentation
-          </a>
-        </div>
+      <div class="export-panel">
+        <h2>Bulk Export Images</h2>
+        <p class="help-text">
+          Select one or more images on the board, then click Export. A modal will open and build a ZIP file
+          with numbered images (left to right, top to bottom). Images inside frames are in subfolders by frame name.
+        </p>
+        <button type="button" id="export-btn" class="button button-primary">
+          Export selected images
+        </button>
+        <p id="error-message" class="error-message" hidden></p>
       </div>
     </div>
-    
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>
