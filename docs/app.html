@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+    <title>Bulk Export Images</title>
+    <script type="module" crossorigin src="/assets/app.b525b1d1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/style.a87c9e06.js">
+    <link rel="stylesheet" href="/assets/style.038d99ba.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="export-panel">
+        <h2>Bulk Export Images</h2>
+        <p class="help-text">
+          Select one or more images on the board, then click Export. A modal will open and build a ZIP file
+          with numbered images (left to right, top to bottom). Images inside frames are in subfolders by frame name.
+        </p>
+        <button type="button" id="export-btn" class="button button-primary">
+          Export selected images
+        </button>
+        <p id="error-message" class="error-message" hidden></p>
+      </div>
+    </div>
+    
+  </body>
+</html>
