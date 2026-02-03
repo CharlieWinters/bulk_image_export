@@ -18,7 +18,7 @@ const allHtmlEntries = fs
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '',
+  base: '/bulk_image_export/',
   build: {
     rollupOptions: {
       input: allHtmlEntries,
