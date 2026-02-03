@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+    <title>Export images</title>
+    <script type="module" crossorigin src="/assets/export-modal.04bd0402.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/style.a87c9e06.js">
+    <link rel="stylesheet" href="/assets/style.038d99ba.css">
+  </head>
+  <body>
+    <div class="export-modal-content">
+      <h2>Export images</h2>
+      <div id="progress-container" class="progress-container">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="progress-status" class="progress-status">Preparing…</p>
+      </div>
+      <div id="done-container" class="done-container" hidden>
+        <p id="done-message" class="progress-status"></p>
+        <a id="download-link" class="button button-primary" href="#" download="export.zip" hidden>Download ZIP</a>
+        <button type="button" id="close-btn" class="button button-secondary">Close</button>
+      </div>
+      <p id="error-message" class="error-message" hidden></p>
+    </div>
+    
+  </body>
+</html>

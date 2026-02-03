@@ -25,15 +25,6 @@
   This generates a static output inside [`dist/`](./dist), which you can host on a static hosting
   service.
 
-### Deploy to GitHub Pages
-
-1. Push this repo to GitHub.
-2. In the repo: **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push to `main` (or run the workflow from the **Actions** tab). The app will be built and deployed automatically.
-
-Your app will be available at `https://<username>.github.io/<repo-name>/`. Use that URL as the **App URL** in your [Miro app settings](https://developers.miro.com/docs/build-your-first-hello-world-app#step-3-configure-your-app-in-miro).
-
 ### Folder structure
 
 <!-- The following tree structure is just an example -->
