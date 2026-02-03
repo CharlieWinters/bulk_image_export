@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
     <title>Export images</title>
-    <script type="module" crossorigin src="/assets/export-modal.04bd0402.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/style.a87c9e06.js">
-    <link rel="stylesheet" href="/assets/style.038d99ba.css">
+    <script type="module" crossorigin src="./assets/export-modal.4919b006.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/style.a87c9e06.js">
+    <link rel="stylesheet" href="./assets/style.86a11501.css">
   </head>
   <body>
     <div class="export-modal-content">
       <h2>Export images</h2>
-      <div id="progress-container" class="progress-container">
+      <div id="options-container" class="options-container">
+        <label class="toggle-label">
+          <input type="checkbox" id="use-names-toggle" checked />
+          <span>Use image names for filenames</span>
+        </label>
+        <p class="help-text">When unchecked, files are named image-001, image-002, …</p>
+        <button type="button" id="start-export-btn" class="button button-primary">Export</button>
+      </div>
+      <div id="progress-container" class="progress-container" hidden>
         <div class="progress-bar">
           <div id="progress-fill" class="progress-fill"></div>
         </div>
@@ -20,7 +28,7 @@
       </div>
       <div id="done-container" class="done-container" hidden>
         <p id="done-message" class="progress-status"></p>
-        <a id="download-link" class="button button-primary" href="#" download="export.zip" hidden>Download ZIP</a>
+        <button type="button" id="download-btn" class="button button-primary" disabled>Download ZIP</button>
         <button type="button" id="close-btn" class="button button-secondary">Close</button>
       </div>
       <p id="error-message" class="error-message" hidden></p>
